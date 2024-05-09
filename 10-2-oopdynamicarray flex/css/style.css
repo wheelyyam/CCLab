@@ -1,0 +1,47 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+h1 {
+  text-align: center;
+}
+
+#mainFlexContainer {
+  background-color: plum;
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+
+  flex-direction: row;
+}
+
+@media (max-width: 800px) {
+
+  /* CSS rules */
+  #mainFlexContainer {
+    flex-direction: column;
+    max-width: 500px;
+  }
+
+
+  .intro {
+    order: 2;
+
+  }
+
+  #canvasContainer {
+    order: 1;
+  }
+
+  .credits {
+    order: 3;
+  }
+
+}
